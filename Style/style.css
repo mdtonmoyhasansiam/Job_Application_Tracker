@@ -162,10 +162,9 @@ button{
     color: #64748B;
 }
 
-.empty img{
+/* .empty img{
   width:60px;
-  opacity:.4;
-}
+} */
 
 @media(max-width:600px){
   .dashboard{flex-direction:column;}
