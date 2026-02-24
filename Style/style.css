@@ -36,6 +36,7 @@ header h1{
   border-radius:8px;
 }
 
+
 .box p{
     font-size: 14px;
     font-weight: 500;
@@ -46,6 +47,14 @@ header h1{
     font-size: 24px;
     font-weight: bold;
     color: #002C5C;
+}
+
+.box .interview-color{
+    color: #10B981;
+}
+
+.box .rejected-color{
+    color: #EF4444;
 }
 
 .header{

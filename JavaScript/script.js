@@ -27,11 +27,11 @@ function showCards(tabName) {
 
     // total interview & rejected (সব card থেকে)
     if (status === "INTERVIEW") {
-      interview++;
+      interview = interview + 1;
     }
 
     if (status === "REJECTED") {
-      rejected++;
+      rejected = rejected + 1;
     }
 
     // filter
