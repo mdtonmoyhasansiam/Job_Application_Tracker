@@ -186,6 +186,11 @@ button{
   width:60px;
 } */
 
-@media(max-width:600px){
-  .dashboard{flex-direction:column;}
+/*Media Responsive Code*/
+
+@media screen and (max-width: 576px) {
+  .dashboard{
+    flex-direction:column;
+
+}
 }
