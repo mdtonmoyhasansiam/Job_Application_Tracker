@@ -1,14 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Job Application Tracker</title>
     <link rel="stylesheet" href="./Style/style.css">
-</head>
-<body>
-    
 
-     <script src="./JavaScript/script.js"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="geist">
+
+    <div class="container">
+
+        <!--Header-->
+        <header>
+            <h1>Job Application Tracker</h1>
+
+            <div class="dashboard">
+                <div class="box">
+                    <p>Total</p>
+                    <h2 id="total">8</h2>
+                </div>
+                <div class="box">
+                    <p>Interview</p>
+                    <h2 id="interview">0</h2>
+                </div>
+                <div class="box">
+                    <p>Rejected</p>
+                    <h2 id="rejected">0</h2>
+                </div>
+            </div>
+        </header>
+
+
+        <!--Job Section-->
+        <section>
+
+            <!-- Section Header -->
+            <div class="header">
+                <h2>Available Jobs</h2>
+                <p id="countText">8 jobs</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active">All</button>
+                <button class="tab">Interview</button>
+                <button class="tab">Rejected</button>
+            </div>
+
+            <!-- Empty Message -->
+            <div id="emptyBox" class="empty">
+                <img src="./jobs.png">
+                <h3>No jobs available</h3>
+                <p>Check back soon for new job opportunities</p>
+            </div>
+
+            <!-- Cards -->
+            <div id="cards">
+
+                <div class="card">
+                    <h3>Mobile First Corp</h3>
+                    <p class="position">React Native Developer</p>
+                    <p>Remote • Full-time • $130,000 - $175,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Build cross-platform mobile applications using React Native. Work on products used by millions of
+                        users worldwide.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>WebFlow Agency</h3>
+                    <p class="position">Web Designer & Developer</p>
+                    <p>Los Angeles, CA • Part-time • $80,000 - $120,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Create stunning web experiences for high-profile clients. Must have portfolio and experience with
+                        modern web design trends.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>DataViz Solutions</h3>
+                    <p class="position">Data Visualization Specialist</p>
+                    <p>Boston, MA • Full-time • $125,000 - $165,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong
+                        analytical thinking.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>CloudFirst Inc</h3>
+                    <p class="position">Backend Developer</p>
+                    <p>Seattle, WA • Full-time • $140,000 - $190,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps
+                        practices and cloud infrastructure.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>Innovation Labs</h3>
+                    <p class="position">UI/UX Engineer</p>
+                    <p>Austin, TX • Full-time • $110,000 - $150,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Create beautiful and functional user interfaces for our suite of products. Strong design skills
+                        and frontend development expertise required.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>MegaCorp Solutions</h3>
+                    <p class="position">JavaScript Developer</p>
+                    <p>New York, NY • Full-time • $130,000 - $170,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Build enterprise applications with JavaScript and modern frameworks. We offer competitive
+                        compensation, health insurance, and professional development opportunities.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>StartupXYZ</h3>
+                    <p class="position">Full Stack Engineer</p>
+                    <p>Remote • Full-time • $120,000 - $160,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">Join our fast-growing startup and work on our core platform. Experience with Node.js and React
+                        required. Great benefits and equity package included.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+                <div class="card">
+                    <h3>TechCorp Industries</h3>
+                    <p class="position">Senior Frontend Developer</p>
+                    <p>San Francisco, CA • Full-time • $130,000 - $175,000</p>
+                    <div class="status">NOT APPLIED</div>
+                    <p style="font-size: 14px; line-height: 20px; color: #323B49;">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+                    <button class="interviewBtn">INTERVIEW</button>
+                    <button class="rejectedBtn">REJECTED</button>
+                    <button class="deleteBtn">Delete</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="./JavaScript/script.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,172 @@
+
+.geist {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
 body{
-    background-color: aqua;
+  margin:0;
+  background: #F8FAFC;
+}
+
+.container{
+  max-width:1110px;
+  margin:auto;
+  padding:20px;
+}
+
+header h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #002C5C;
+}
+
+.dashboard{
+  display:flex;
+  gap:16px;
+}
+
+.box{
+  /* flex:1; */
+  width: 320px;
+  background: #FFFFFF;
+  padding:20px;
+  border-radius:8px;
+}
+
+.box p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #323B49;
+}
+
+.box h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #002C5C;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.tabs{
+  margin-top:24px;
+  margin-bottom: 16px;
+}
+
+.tab{
+  padding:10px 32px;
+  border:none;
+  background:#FFFFFF;
+  color: #64748B;
+  font-size: 12px;
+  font-weight: 500;
+  cursor:pointer;
+  margin-right:8px;
+}
+
+.tab.active{
+  background: #3B82F6;
+  color:#FFFFFF;
+}
+
+.card{
+  background: #FFFFFF;
+  padding: 24px;
+  border-radius:8px;
+  margin-bottom:16px;
+}
+
+.card h3{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: #002C5C;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #64748B;
+}
+
+.status{
+  font-size:14px;
+  background:#EEF4FF;
+  display:inline-block;
+  line-height: 20px;
+  font-weight: 500;
+  padding:8px 12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+button{
+  margin-right:8px;
+  padding:8px 12px;
+  box-shadow: 0 4px 4px 0 #0000000e;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+.interviewBtn{
+   background:#2ecc71;
+   background: none;
+   border:1px solid #10B981;
+   color:#10B981;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+}
+.rejectedBtn{
+   background:#EF4444;
+   background: none;
+   border:1px solid #EF4444;
+   color:#EF4444;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+}
+.deleteBtn{
+   background:#808080;
+   background: none;
+   border:1px solid #808080;
+   color:#708090;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+}
+
+.empty{
+  text-align:center;
+  padding:40px;
+  display:none;
+}
+
+.empty h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #002C5C;
+    line-height: 32px;
+}
+
+.empty p{
+    font-size: 16px;
+    line-height: 22px;
+    color: #64748B;
+}
+
+.empty img{
+  width:60px;
+  opacity:.4;
+}
+
+@media(max-width:600px){
+  .dashboard{flex-direction:column;}
 }
