@@ -4,8 +4,8 @@ const tabs = document.querySelectorAll(".tab");
 const emptyBox = document.getElementById("emptyBox");
 
 const total = document.getElementById("total");
-const interviewCount = document.getElementById("interviewCount");
-const rejectedCount = document.getElementById("rejectedCount");
+const interviewCount = document.getElementById("interview");
+const rejectedCount = document.getElementById("rejected");
 const countText = document.getElementById("countText");
 
 let activeTab = "All";
@@ -51,7 +51,7 @@ function showCards(tabName) {
 
   // empty message
   if (visible === 0) {
-    emptyBox.style.display = "block";
+    emptyBox.style.display = "inline";
   } else {
     emptyBox.style.display = "none";
   }
