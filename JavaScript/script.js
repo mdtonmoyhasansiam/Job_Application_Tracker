@@ -51,7 +51,7 @@ function showCards(tabName) {
 
   // empty message
   if (visible === 0) {
-    emptyBox.style.display = "inline";
+    emptyBox.style.display = "block";
   } else {
     emptyBox.style.display = "none";
   }
